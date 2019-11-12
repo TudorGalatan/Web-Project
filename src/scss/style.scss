@@ -1,0 +1,138 @@
+/* Variables */
+
+$gray: #535353;
+$temporary: black;
+
+
+
+
+/* Website Sections */
+
+body
+{
+	/* Header */
+	
+	header
+	{
+		.logo
+		{
+			a
+			{
+				img
+				{
+					height: 120px;
+					width: 120px;
+				}
+			}
+		}
+
+		
+		nav
+		{
+			ul
+			{
+				li
+				{
+					float: left;
+					list-style: none;
+					padding: 5px 40px 5px 40px;
+					color: $gray;
+					font-family: Arial;
+					font-size: 18px;
+					
+					a
+					{
+					
+					}
+				}
+			}
+		}
+	}
+
+
+
+	/* Banner */
+	
+	.banner
+	{
+		/* background: $temporary; */
+		
+		img
+		{
+			width: 1800px;
+		}
+		
+		
+		h1
+		{
+			font-size: 70px;
+		}
+		
+		
+		h2
+		{
+			font-size: 30px;
+		}
+		
+		
+		button
+		{
+			font-size: 16px;
+		}
+	}
+
+
+
+	/* About Me */
+	
+	.about_me
+	{
+		.photo
+		{
+		
+			img
+			{
+				height: 400px;
+			}
+			
+		}
+		
+		
+		.content
+		{
+			h1
+			{
+				font-size: 28px;
+			}
+			
+			h2
+			{
+				font-size: 20px;
+			}
+			
+			p
+			{
+				font-size: 16px;
+			}
+			
+			ul
+			{
+				li
+				{
+					font-size: 10px;
+					float: left;
+					list-style: none;
+					padding: 5px 10px 5px 10px;
+					
+					a
+					{
+						img
+						{
+							width: 20px;
+						}
+					}
+				}
+			}
+		}
+	}	
+}

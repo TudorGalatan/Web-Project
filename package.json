@@ -15,6 +15,9 @@
     "finalhandler": "^1.1.2",
     "font-awesome": "^4.7.0",
     "gulp": "^4.0.2",
+    "gulp-csso": "^3.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-scss": "^1.4.0",
     "http": "0.0.0",
     "jquery": "^3.4.1",
     "serve-static": "^1.14.1"
