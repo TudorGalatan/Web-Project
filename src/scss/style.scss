@@ -66,7 +66,7 @@ body
 	
 	.banner
 	{
-		background: $temporary_1;
+		background: $gray;
 		
 		img
 		{
@@ -76,7 +76,7 @@ body
 		
 		h1
 		{
-			font-size: 70px;
+			font-size: 80px;
 			font-family: Arial;
 			color: white;
 		}
@@ -84,15 +84,19 @@ body
 		
 		h2
 		{
-			font-size: 30px;
+			font-size: 26px;
 			font-family: Arial;
+			font-style: italic;
 			color: white;
 		}
 		
 		
 		button
 		{
+			background-color: transparent;
+			border-color: white;
 			font-size: 16px;
+			color: white;
 		}
 	}
 
