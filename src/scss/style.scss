@@ -282,7 +282,17 @@ body
 	
 	.contact_me
 	{
-	
+		ul
+		{
+			li
+			{
+				list-style: none;
+				a
+				{
+					color: black;
+				}
+			}
+		}
 	}
 	
 	
