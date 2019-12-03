@@ -6,61 +6,61 @@
 <html lang="en-US">
 
 
-
 	<head>
 		
-		
 		<title>Tudor G. – Web Developer</title>
-		
 		
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 		
-		
-		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/app.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
-		
 		
 	</head>
 
-	
 	
 	<body>
 	
 
 		<!-- Start Header -->
 		
-		<header class="row">
+		<header class="container-fluid">
 		
-			<div class="logo col-xl-2 col-md-2 col-sm-4 col-xs-4">
-				<a href="index.html">
-					<img src="images/Logo/3.png" alt="A logo with my name." />
-				</a>
+		
+			<div class="row">
+			
+				<div class="logo col-xl-2 col-md-2 col-sm-4 col-xs-4">
+					<a href="index.html">
+						<img src="images/Logo/3.png" alt="A logo with my name." />
+					</a>
+				</div>
+			
+				<nav class="col-xl-10 col-md-10 col-sm-8 col-xs-8">
+					<ul>
+						<li>
+							<a href="index.html">Home Page</a>
+						</li>
+						<li>
+							<a href="index.html">About Me</a>
+						</li>
+						<li>
+							<a href="index.html">Education</a>
+						</li>
+						<li>
+							<a href="index.html">Personal Skills</a>
+						</li>
+						<li>
+							<a href="index.html">Work Experience</a>
+						</li>
+						<li>
+							<a href="index.html">Contact Me</a>
+						</li>
+					</ul>
+				</nav>
+				
 			</div>
-		
-			<nav class="col-xl-10 col-md-10 col-sm-8 col-xs-8">
-				<ul>
-					<li>
-						<a href="index.html">Home Page</a>
-					</li>
-					<li>
-						<a href="index.html">About Me</a>
-					</li>
-					<li>
-						<a href="index.html">Education</a>
-					</li>
-					<li>
-						<a href="index.html">Personal Skills</a>
-					</li>
-					<li>
-						<a href="index.html">Work Experience</a>
-					</li>
-					<li>
-						<a href="index.html">Contact Me</a>
-					</li>
-				</ul>
-			</nav>
+
 		
 		</header>
 		
@@ -71,9 +71,11 @@
 		
 		<div class="banner">
 			<img class="img-fluid" src="images/Me/4.jpg" alt="A photograph with me." />
-			<h1>I'm Tudor</h1>
-			<h2>Web Developer</h2>
-			<button>Contact Me</button>
+			<div class="banner_content">
+				<h1>I'm Tudor</h1>
+				<h2>Web Developer</h2>
+				<button>Contact Me</button>
+			</div>
 		</div>
 		
 		<!-- End Banner -->
@@ -81,43 +83,54 @@
 
 		<!-- Start About Me -->
 		
-		<div class="about_me">
+		<div class="about_me container">
+		
+			<div class="row">
 			
-			<div class="photo">
-				<img src="images/Me/2.jpg" alt="A photograph with me." />
-			</div>
-			
-			<div class="content">
-				<h1>Tudor Gălățan</h1>
-				<h2>Software Developer</h2>
-				<p>Hello! My name is Tudor G. and I am a web developer based in Cluj-Napoca, Romania.</p>
-				<ul>
-					<li>
-						<a href="https://www.facebook.com/galatantudor1" target="_blank">
-							<img src="images/Icons/Facebook.png" alt="Facebook logo." />
-						</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/tudorgalatan/" target="_blank">
-							<img src="images/Icons/Instagram.png" alt="Instagram logo." />
-						</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/tudorgalatan" target="_blank">
-							<img src="images/Icons/Twitter.png" alt="Twitter logo." />
-						</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">
-							<img src="images/Icons/LinkedIn.png" alt="LinkedIn logo." />
-						</a>
-					</li>
-					<li>
-						<a href="https://github.com/TudorGalatan" target="_blank">
-							<img src="images/Icons/GitHub.png" alt="GitHub logo." />
-						</a>
-					</li>
-				</ul>
+				<div class="photo_holder col-xl-6">
+				
+					<div class="photo">
+						<img src="images/Me/2.jpg" alt="A photograph with me." />
+					</div>
+					
+				</div>
+				
+				<div class="content_holder col-xl-6">
+				
+					<div class="content">
+						<h1>Tudor Gălățan</h1>
+						<h2>Software Developer</h2>
+						<p>Hello! My name is Tudor G. and I am a web developer based in Cluj-Napoca, Romania.</p>
+						<ul>
+							<li>
+								<a href="https://www.facebook.com/galatantudor1" target="_blank">
+									<img src="images/Icons/Facebook.png" alt="Facebook logo." />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/tudorgalatan/" target="_blank">
+									<img src="images/Icons/Instagram.png" alt="Instagram logo." />
+								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/tudorgalatan" target="_blank">
+									<img src="images/Icons/Twitter.png" alt="Twitter logo." />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">
+									<img src="images/Icons/LinkedIn.png" alt="LinkedIn logo." />
+								</a>
+							</li>
+							<li>
+								<a href="https://github.com/TudorGalatan" target="_blank">
+									<img src="images/Icons/GitHub.png" alt="GitHub logo." />
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				
 			</div>
 			
 		</div>
@@ -127,77 +140,91 @@
 		
 		<!-- Start Education -->
 		
-		<div class="education">
+		<div class="">
+			
+			<div class="education container">
+			
+				<div class="row">
+				
+					<div class="institution col-xl-3">
+						<h1>Școala Gimnazială Nr. 1</h1>
+						<h2>Elementary School</h2>
+						<h3>General Studies</h3>
+						<h4>2006 - 2010</h4>
+						<p>Add Description</p>
+					</div>
+				
+					<div class="institution col-xl-3">
+						<h1>Școala Gimnazială Nr. 1</h1>
+						<h2>Middle School</h2>
+						<h3>General Studies</h3>
+						<h4>2010 - 2014</h4>
+						<p>Add Description</p>
+					</div>
+					
+					<div class="institution col-xl-3">
+						<h1>"Ion Luca" Theoretical High School</h1>
+						<h2>High School</h2>
+						<h3>Mathematics and Computer Science</h3>
+						<h4>2014 - 2018</h4>
+						<p>Add Description</p>
+					</div>
+					
+					<div class="institution col-xl-3">
+						<h1>Babeș-Bolyai University</h1>
+						<h2>Bachelor's Degree</h2>
+						<h3>Computer Science</h3>
+						<h4>2018 - 2019</h4>
+						<p>In the first year of faculty I learned a lot about Computer Science fundamentals, 
+						data structures and algorithms, graphs and I also learned how to use different 
+						programming languages, like Python, C, C++ and Assembly.
+						</p>
+					</div>
+					
+				</div>
+				
+			</div>
 		
-			<div class="institution">
-				<h1>Școala Gimnazială Nr. 1</h1>
-				<h2>Elementary School</h2>
-				<h3>General Studies</h3>
-				<h4>2006 - 2010</h4>
-				<p>Add Description</p>
-			</div>
-		
-			<div class="institution">
-				<h1>Școala Gimnazială Nr. 1</h1>
-				<h2>Middle School</h2>
-				<h3>General Studies</h3>
-				<h4>2010 - 2014</h4>
-				<p>Add Description</p>
-			</div>
-			
-			<div class="institution">
-				<h1>"Ion Luca" Theoretical High School</h1>
-				<h2>High School</h2>
-				<h3>Mathematics and Computer Science</h3>
-				<h4>2014 - 2018</h4>
-				<p>Add Description</p>
-			</div>
-			
-			<div class="institution">
-				<h1>Babeș-Bolyai University</h1>
-				<h2>Bachelor's Degree</h2>
-				<h3>Computer Science</h3>
-				<h4>2018 - 2019</h4>
-				<p>In the first year of faculty I learned a lot <br />about Computer Science fundamentals, 
-				data structures <br />and algorithms, graphs and I also learned <br />how to use different 
-				programming languages, <br />like Python, C, C++ and Assembly.
-				</p>
-			</div>
-			
 		</div>
+		
+
 		
 		<!-- End Education -->
 		
 		
 		<!-- Start Personal Skills -->
 		
-		<div class="personal_skills">
+		<div class="personal_skills container">
 		
-			<div class="skill_types">
-				<h1>Technical Skills</h1>
-				<ul>
-					<li>Concepts: graphs, data structures and algorithms, web development</li>
-					<li>Language and technologies: C, C++, Python, HTML, CSS, JavaScript, npm, Gulp, Git, Bootstrap</li>
-					<li>Problem solving skills</li>
-				</ul>
-			</div>
+			<div class="row">
 			
-			<div class="skill_types">
-				<h1>Soft Skills</h1>
-				<ul>
-					<li>Communication skills</li>
-					<li>Critical and analytical thinking</li>
-					<li>Positive attitude</li>
-				</ul>
-			</div>
-			
-			<div class="skill_types">
-				<h1>Language Skills</h1>
-				<ul>
-					<li>Romanian: Native</li>
-					<li>English: Advanced</li>
-					<li>French: Beginner</li>
-				</ul>
+				<div class="skill_types col-xl-4">
+					<h1>Technical Skills</h1>
+					<ul>
+						<li>Concepts: graphs, data structures and algorithms, web development</li>
+						<li>Language and technologies: C, C++, Python, HTML, CSS, JavaScript, npm, Gulp, Git, Bootstrap</li>
+						<li>Problem solving skills</li>
+					</ul>
+				</div>
+				
+				<div class="skill_types col-xl-4">
+					<h1>Soft Skills</h1>
+					<ul>
+						<li>Communication skills</li>
+						<li>Critical and analytical thinking</li>
+						<li>Positive attitude</li>
+					</ul>
+				</div>
+				
+				<div class="skill_types col-xl-4">
+					<h1>Language Skills</h1>
+					<ul>
+						<li>Romanian: Native</li>
+						<li>English: Advanced</li>
+						<li>French: Beginner</li>
+					</ul>
+				</div>
+				
 			</div>
 		
 		</div>
@@ -206,28 +233,32 @@
 		
 		<!-- Start Work Experience -->
 		
-		<div class="work_experience">
+		<div class="work_experience container">
 		
-			<div class="position">
-				<div class="title">
-					<h1>WellCode</h1>
-					<h2>2017 - 2019</h2>
-				</div>
-				<div class="description">
-					<h1>Volunteer</h1>
-					<p>I helped the community.</p>
-				</div>
-			</div>
+			<div class="row">
 			
-			<div class="position">
-				<div class="title">
-					<h1>Hai la Olimpiadă!</h1>
-					<h2>2019</h2>
+				<div class="position col-xl-6">
+					<div class="title">
+						<h1>WellCode</h1>
+						<h2>2017 - 2019</h2>
+					</div>
+					<div class="description">
+						<h1>Volunteer</h1>
+						<p>I helped the community.</p>
+					</div>
 				</div>
-				<div class="description">
-					<h1>Computer Science Teacher</h1>
-					<p>I prepared students.</p>
+				
+				<div class="position col-xl-6">
+					<div class="title">
+						<h1>Hai la Olimpiadă!</h1>
+						<h2>2019</h2>
+					</div>
+					<div class="description">
+						<h1>Computer Science Teacher</h1>
+						<p>I prepared students.</p>
+					</div>
 				</div>
+				
 			</div>
 		
 		</div>
@@ -237,30 +268,62 @@
 		
 		<!-- Start Contact Me -->
 		
-		<div class="contact_me">
+		<div class="contact_me container">
+		
+			<div class="row">
 			
-			<ul>
-				<li>Email: tudorgalatan@gmail.com</li>
-				<li>
-					<a href="https://www.facebook.com/galatantudor1" target="_blank">Facebook</a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/tudorgalatan/" target="_blank">Instagram</a>
-				</li>
-				<li>
-					<a href="https://twitter.com/tudorgalatan" target="_blank">Twitter</a>
-				</li>
-				<li>
-					<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">LinkedIn</a>
-				</li>
-				<li>
-					<a href="https://github.com/TudorGalatan" target="_blank">GitHub</a>
-				</li>
-			<ul>
-			
-			<form>
-				<!-- Email Me Form -->
-			</form>
+				<div class="contact_info col-xl-6">
+				
+					<ul>
+						<li>Email: tudorgalatan@gmail.com</li>
+						<li>
+							<a href="https://www.facebook.com/galatantudor1" target="_blank">Facebook</a>
+						</li>
+						<li>
+							<a href="https://www.instagram.com/tudorgalatan/" target="_blank">Instagram</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/tudorgalatan" target="_blank">Twitter</a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">LinkedIn</a>
+						</li>
+						<li>
+							<a href="https://github.com/TudorGalatan" target="_blank">GitHub</a>
+						</li>
+					<ul>
+					
+				</div>
+				
+				<div class="contact_me_form col-xl-6">
+				
+					<h1>Contact Me</h1>
+					
+					<form>
+						Name:
+						<br />
+						<input type="text" name="name" />
+						<br />
+						Email:
+						<br />
+						<input type="text" name="email" />
+						<br />
+						Phone Number:
+						<br />
+						<input type="text" name="phone_number" />
+						<br />
+						Subject:
+						<br />
+						<input type="text" name="subject" />
+						<br />
+						Message:
+						<br />
+						<textarea name="message" rows="5" cols="50"></textarea>
+					</form>
+					
+				</div>
+				
+			</div>
 			
 		</div>
 		
@@ -269,29 +332,41 @@
 		
 		<!-- Start Footer -->
 		
-		<footer>
+		<footer class="container-fluid">
 		
 			<div>
 				<ul>
-					<li><a>Email</a></li>
-					<li><a>Facebook link</a></li>
-					<li><a>Instagram link</a></li>
-					<li><a>Twitter link</a></li>
-					<li><a>LinkedIn link</a></li>
-					<li><a>GitHub link</a></li>
+					<li>
+						<a>Email: tudorgalatan@gmail.com</a>
+					</li>
+					<li>
+						<a href="https://www.facebook.com/galatantudor1" target="_blank">Facebook</a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/tudorgalatan/" target="_blank">Instagram</a>
+					</li>
+					<li>
+						<a href="https://twitter.com/tudorgalatan" target="_blank">Twitter</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">LinkedIn</a>
+					</li>
+					<li>
+						<a href="https://github.com/TudorGalatan" target="_blank">GitHub</a>
+					</li>
 				<ul>
 			</div>
 			
 			<div>
 				<ul>
-					<li>Location</li>
-					<li>Email</li>
-					<li>Phone Number</li>
+					<li>Location: Cluj-Napoca, Cluj County, Romania</li>
+					<li>Email: tudorgalatan@gmail.com</li>
+					<li>Phone Number: (+40) 720 914 270</li>
 				<ul>
 			</div>
 			
 			<div>
-				<p>Copyright info ??</p>
+				<p>Copyright info</p>
 			</div>
 			
 		</footer>
@@ -301,6 +376,5 @@
 		
 	</body>
 	
-
 
 </html>

@@ -1,6 +1,7 @@
 /* Variables */
 
 $gray: #535353;
+$light-gray: #A4A4A4;
 $temporary_1: red;
 $temporary_2: green;
 $temporary_3: blue;
@@ -73,30 +74,40 @@ body
 			max-width: 100%;
 		}
 		
-		
-		h1
+		&_content
 		{
-			font-size: 80px;
-			font-family: Arial;
-			color: white;
-		}
-		
-		
-		h2
-		{
-			font-size: 26px;
-			font-family: Arial;
-			font-style: italic;
-			color: white;
-		}
-		
-		
-		button
-		{
-			background-color: transparent;
-			border-color: white;
-			font-size: 16px;
-			color: white;
+			background: rgba(0,0,0,0.6);
+			position: absolute;
+			z-index: 2;
+			top: 50%;
+			right: 0;
+			padding: 10px;
+			
+			
+			h1
+			{
+				font-size: 80px;
+				font-family: Arial;
+				color: white;
+			}
+			
+			
+			h2
+			{
+				font-size: 26px;
+				font-family: Arial;
+				font-style: italic;
+				color: white;
+			}
+			
+			
+			button
+			{
+				background-color: transparent;
+				border-color: white;
+				font-size: 16px;
+				color: white;
+			}
 		}
 	}
 
@@ -106,57 +117,74 @@ body
 	
 	.about_me
 	{
-		.photo
-		{
-		
-			img
-			{
-				height: 400px;
-			}
-			
-		}
-		
-		
-		.content
+		.row
 		{
 			background: $gray;
-			height: 200px;
+			height: 570px;
 			
-			h1
+			.photo_holder
 			{
-				font-size: 28px;
-				color: white;
-			}
-			
-			h2
-			{
-				font-size: 20px;
-				color: white;
-			}
-			
-			p
-			{
-				font-size: 16px;
-				color: white;
-			}
-			
-			ul
-			{
-				li
+				background: $light-gray;
+				transform: rotate(45deg);
+				
+				.photo
 				{
-					float: left;
-					list-style: none;
-					padding: 5px 5px 5px 5px;
+					transform: rotate(-45deg);
 					
-					a
+					img
 					{
-						img
+						height: 400px;
+					}	
+				}				
+			}
+			
+			
+			.content_holder
+			{
+				background: $light-gray;
+				transform: rotate(45deg);
+				
+				.content
+				{
+					transform: rotate(-45deg);
+					
+					h1
+					{
+						font-size: 28px;
+						color: black;
+					}
+					
+					h2
+					{
+						font-size: 20px;
+						color: black;
+					}
+					
+					p
+					{
+						font-size: 16px;
+						color: black;
+					}
+					
+					ul
+					{
+						li
 						{
-							width: 16px;
+							float: left;
+							list-style: none;
+							padding: 5px 5px 5px 5px;
+							
+							a
+							{
+								img
+								{
+									width: 16px;
+								}
+							}
 						}
 					}
 				}
-			}
+			}	
 		}
 	}
 	
@@ -167,44 +195,45 @@ body
 	.education
 	{
 		background: $gray;
-		height: 200px;
+		height: 300px;
 		color: white;
 		
-		.institution
+		.row
 		{
-			float: left;
-			
-			h1
+			.institution
 			{
-				font-size: 20px;
-				font-style: bold;
-				text-align: center;
-			}
-			
-			h2
-			{
-				font-size: 18px;
-				text-align: center;
-			}
-			
-			h3
-			{
-				font-size: 16px;
-				font-style: italic;
-				text-align: center;
-			}
-			
-			h4
-			{
-				font-size: 16px;
-				text-align: center;
-			}
-			
-			p
-			{
-				font-size: 14px;
-				text-align: justify;
-			}
+				h1
+				{
+					font-size: 20px;
+					font-style: bold;
+					text-align: center;
+				}
+				
+				h2
+				{
+					font-size: 18px;
+					text-align: center;
+				}
+				
+				h3
+				{
+					font-size: 16px;
+					font-style: italic;
+					text-align: center;
+				}
+				
+				h4
+				{
+					font-size: 16px;
+					text-align: center;
+				}
+				
+				p
+				{
+					font-size: 14px;
+					text-align: justify;
+				}
+			}			
 		}
 	}
 	
@@ -217,19 +246,22 @@ body
 		background: $gray;
 		color: white;
 		
-		.skill_types
+		.row
 		{
-			h1
+			.skill_types
 			{
-				font-size: 20px;
-			}
-			
-			ul
-			{
-				li
+				h1
 				{
-					list-style: none;
-					font-size: 16px;
+					font-size: 20px;
+				}
+				
+				ul
+				{
+					li
+					{
+						list-style: none;
+						font-size: 16px;
+					}
 				}
 			}
 		}
@@ -241,38 +273,40 @@ body
 	
 	.work_experience
 	{
-		.position
+		background: $gray;
+		color: white;
+		
+		.row
 		{
-			.title
+			.position
 			{
-				h1
+				.title
 				{
-					font-size: 24px;
-					color: black;
+					h1
+					{
+						font-size: 24px;
+					}
+					
+					h2
+					{
+						font-size: 20px;
+						font-style: italic;
+					}
 				}
 				
-				h2
+				.description
 				{
-					font-size: 20px;
-					color: $gray;
-					font-style: italic;
+					h1
+					{
+						font-size: 26px;
+					}
+					
+					p
+					{
+						font-size: 20px;
+					}
 				}
-			}
-			
-			.description
-			{
-				h1
-				{
-					font-size: 26px;
-					color: black;
-				}
-				
-				p
-				{
-					font-size: 20px;
-					color: $gray;
-				}
-			}
+			}	
 		}
 	}
 	
@@ -282,14 +316,47 @@ body
 	
 	.contact_me
 	{
-		ul
+		.row
 		{
-			li
+			.contact_info
 			{
-				list-style: none;
-				a
+				ul
 				{
-					color: black;
+					li
+					{
+						list-style: none;
+						
+						a
+						{
+							color: $gray;
+						}
+						
+						a:hover
+						{
+							color: black;
+						}
+					}
+				}
+			}
+			
+			.contact_me_form
+			{
+				h1
+				{
+					
+				}
+				
+				form
+				{
+					input
+					{
+						
+					}
+					
+					textarea
+					{
+						
+					}
 				}
 			}
 		}
