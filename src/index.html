@@ -13,9 +13,13 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans|Sonsie+One&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" type="text/css" href="css/app.min.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		
+		<script src="js/noframework.waypoints.min.js"></script>
+		<script src="js/inview.min.js"></script>
 		
 	</head>
 
@@ -42,19 +46,19 @@
 							<a href="index.html">Home Page</a>
 						</li>
 						<li>
-							<a href="index.html">About Me</a>
+							<a href="#about_me">About Me</a>
 						</li>
 						<li>
-							<a href="index.html">Education</a>
+							<a href="#education">Education</a>
 						</li>
 						<li>
-							<a href="index.html">Personal Skills</a>
+							<a href="#personal_skills">Personal Skills</a>
 						</li>
 						<li>
-							<a href="index.html">Work Experience</a>
+							<a href="#work_experience">Work Experience</a>
 						</li>
 						<li>
-							<a href="index.html">Contact Me</a>
+							<a href="#contact_me">Contact Me</a>
 						</li>
 					</ul>
 				</nav>
@@ -69,10 +73,10 @@
 
 		<!-- Start Banner -->
 		
-		<div class="banner">
-			<img class="img-fluid" src="images/Me/4.jpg" alt="A photograph with me." />
+		<div class="banner" id="banner">
+			<img class="banner_image img-fluid" src="images/Me/4.jpg" alt="A photograph with me." />
 			<div class="banner_content">
-				<h1>I'm Tudor</h1>
+				<h1>I'm TUDOR</h1>
 				<h2>Web Developer</h2>
 				<button>Contact Me</button>
 			</div>
@@ -83,52 +87,56 @@
 
 		<!-- Start About Me -->
 		
-		<div class="about_me container">
+		<div class="about_me">
 		
-			<div class="row">
+			<div class="about_me_container container" id="about_me">
 			
-				<div class="photo_holder col-xl-6">
+				<div class="row">
 				
-					<div class="photo">
-						<img src="images/Me/2.jpg" alt="A photograph with me." />
+					<div class="photo_holder col-xl-6">
+					
+						<div class="photo">
+							<img src="images/Me/2.jpg" alt="A photograph with me." />
+						</div>
+						
 					</div>
 					
-				</div>
-				
-				<div class="content_holder col-xl-6">
-				
-					<div class="content">
-						<h1>Tudor Gălățan</h1>
-						<h2>Software Developer</h2>
-						<p>Hello! My name is Tudor G. and I am a web developer based in Cluj-Napoca, Romania.</p>
-						<ul>
-							<li>
-								<a href="https://www.facebook.com/galatantudor1" target="_blank">
-									<img src="images/Icons/Facebook.png" alt="Facebook logo." />
-								</a>
-							</li>
-							<li>
-								<a href="https://www.instagram.com/tudorgalatan/" target="_blank">
-									<img src="images/Icons/Instagram.png" alt="Instagram logo." />
-								</a>
-							</li>
-							<li>
-								<a href="https://twitter.com/tudorgalatan" target="_blank">
-									<img src="images/Icons/Twitter.png" alt="Twitter logo." />
-								</a>
-							</li>
-							<li>
-								<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">
-									<img src="images/Icons/LinkedIn.png" alt="LinkedIn logo." />
-								</a>
-							</li>
-							<li>
-								<a href="https://github.com/TudorGalatan" target="_blank">
-									<img src="images/Icons/GitHub.png" alt="GitHub logo." />
-								</a>
-							</li>
-						</ul>
+					<div class="content_holder col-xl-6">
+					
+						<div class="content">
+							<h1>Tudor Gălățan</h1>
+							<h2>Software Developer</h2>
+							<p>Hello! My name is Tudor G. and I am a web developer based in Cluj-Napoca, Romania.</p>
+							<ul>
+								<li>
+									<a href="https://www.facebook.com/galatantudor1" target="_blank">
+										<img src="images/Icons/Facebook.png" alt="Facebook logo." />
+									</a>
+								</li>
+								<li>
+									<a href="https://www.instagram.com/tudorgalatan/" target="_blank">
+										<img src="images/Icons/Instagram.png" alt="Instagram logo." />
+									</a>
+								</li>
+								<li>
+									<a href="https://twitter.com/tudorgalatan" target="_blank">
+										<img src="images/Icons/Twitter.png" alt="Twitter logo." />
+									</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">
+										<img src="images/Icons/LinkedIn.png" alt="LinkedIn logo." />
+									</a>
+								</li>
+								<li>
+									<a href="https://github.com/TudorGalatan" target="_blank">
+										<img src="images/Icons/GitHub.png" alt="GitHub logo." />
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
+					
 				</div>
 				
 			</div>
@@ -140,11 +148,15 @@
 		
 		<!-- Start Education -->
 		
-		<div class="">
+		<div class="education" id="education">
 			
-			<div class="education container">
+			<div class="education_container container">
 			
-				<div class="row">
+				<div class="title row">
+					<h1>Education</h1>
+				</div>
+			
+				<div class="content row">
 				
 					<div class="institution col-xl-3">
 						<h1>Școala Gimnazială Nr. 1</h1>
@@ -194,73 +206,90 @@
 		
 		<!-- Start Personal Skills -->
 		
-		<div class="personal_skills container">
+		<div class="personal_skills">
 		
-			<div class="row">
+			<div class="personal_skills_container container" id="personal_skills">
 			
-				<div class="skill_types col-xl-4">
-					<h1>Technical Skills</h1>
-					<ul>
-						<li>Concepts: graphs, data structures and algorithms, web development</li>
-						<li>Language and technologies: C, C++, Python, HTML, CSS, JavaScript, npm, Gulp, Git, Bootstrap</li>
-						<li>Problem solving skills</li>
-					</ul>
+				<div class="title row">
+					<h1>Personal Skills</h1>
 				</div>
+			
+				<div class="content row">
 				
-				<div class="skill_types col-xl-4">
-					<h1>Soft Skills</h1>
-					<ul>
-						<li>Communication skills</li>
-						<li>Critical and analytical thinking</li>
-						<li>Positive attitude</li>
-					</ul>
+					<div class="skill_types col-xl-4">
+						<h1>Technical Skills</h1>
+						<ul>
+							<li>Concepts: graphs, data structures and algorithms, web development</li>
+							<li>Language and technologies: C, C++, Python, HTML, CSS, JavaScript, npm, Gulp, Git, Bootstrap</li>
+							<li>Problem solving skills</li>
+						</ul>
+					</div>
+					
+					<div class="skill_types col-xl-4">
+						<h1>Soft Skills</h1>
+						<ul>
+							<li>Communication skills</li>
+							<li>Critical and analytical thinking</li>
+							<li>Positive attitude</li>
+						</ul>
+					</div>
+					
+					<div class="skill_types col-xl-4">
+						<h1>Language Skills</h1>
+						<ul>
+							<li>Romanian: Native</li>
+							<li>English: Advanced</li>
+							<li>French: Beginner</li>
+						</ul>
+					</div>
+					
 				</div>
-				
-				<div class="skill_types col-xl-4">
-					<h1>Language Skills</h1>
-					<ul>
-						<li>Romanian: Native</li>
-						<li>English: Advanced</li>
-						<li>French: Beginner</li>
-					</ul>
-				</div>
-				
+			
 			</div>
-		
+			
 		</div>
+
 		<!-- End Personal Skills -->
 		
 		
 		<!-- Start Work Experience -->
 		
-		<div class="work_experience container">
+		<div class="work_experience">
 		
-			<div class="row">
+			<div class="work_experience_container container" id="work_experience">
 			
-				<div class="position col-xl-6">
-					<div class="title">
-						<h1>WellCode</h1>
-						<h2>2017 - 2019</h2>
-					</div>
-					<div class="description">
-						<h1>Volunteer</h1>
-						<p>I helped the community.</p>
-					</div>
+				<div class="title row">
+					<h1>Work Experience</h1>
 				</div>
+			
+				<div class="content row">
 				
-				<div class="position col-xl-6">
-					<div class="title">
-						<h1>Hai la Olimpiadă!</h1>
-						<h2>2019</h2>
+					<div class="position col-xl-6">
+						<div class="title">
+							<h1>WellCode</h1>
+							<h2>2017 - 2019</h2>
+						</div>
+						<div class="description">
+							<h1>Volunteer</h1>
+							<p>I helped the community.</p>
+						</div>
 					</div>
-					<div class="description">
-						<h1>Computer Science Teacher</h1>
-						<p>I prepared students.</p>
+					
+					<div class="position col-xl-6">
+						<div class="title">
+							<h1>Hai la Olimpiadă!</h1>
+							<h2>2019</h2>
+						</div>
+						<div class="description">
+							<h1>Computer Science Teacher</h1>
+							<p>I prepared students.</p>
+						</div>
 					</div>
+					
 				</div>
-				
+			
 			</div>
-		
+			
 		</div>
 		
 		<!-- End Work Experience -->
@@ -268,58 +297,55 @@
 		
 		<!-- Start Contact Me -->
 		
-		<div class="contact_me container">
+		<div class="contact_me">
 		
-			<div class="row">
+			<div class="contact_me_container container" id="contact_me" id="contact_me">
 			
-				<div class="contact_info col-xl-6">
-				
-					<ul>
-						<li>Email: tudorgalatan@gmail.com</li>
-						<li>
-							<a href="https://www.facebook.com/galatantudor1" target="_blank">Facebook</a>
-						</li>
-						<li>
-							<a href="https://www.instagram.com/tudorgalatan/" target="_blank">Instagram</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/tudorgalatan" target="_blank">Twitter</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">LinkedIn</a>
-						</li>
-						<li>
-							<a href="https://github.com/TudorGalatan" target="_blank">GitHub</a>
-						</li>
-					<ul>
-					
-				</div>
-				
-				<div class="contact_me_form col-xl-6">
-				
+				<div class="title row">
 					<h1>Contact Me</h1>
+				</div>
+			
+				<div class="content row">
 					
-					<form>
-						Name:
-						<br />
-						<input type="text" name="name" />
-						<br />
-						Email:
-						<br />
-						<input type="text" name="email" />
-						<br />
-						Phone Number:
-						<br />
-						<input type="text" name="phone_number" />
-						<br />
-						Subject:
-						<br />
-						<input type="text" name="subject" />
-						<br />
-						Message:
-						<br />
-						<textarea name="message" rows="5" cols="50"></textarea>
-					</form>
+					<div class="contact_me_form col-xl-6">
+						
+						<form>
+							<label for="name">Name:</label>
+							<input type="text" name="name" id="name" />
+							<label for="email">Email:</label>
+							<input type="text" name="email" id="email" />
+							<label for="phone_number">Phone Number:</label>
+							<input type="text" name="phone_number" id="phone_number" />
+							<label for="subject">Subject:</label>
+							<input type="text" name="subject" id="subject" />
+							<label for="message">Message:</label>
+							<textarea name="message" id="message" rows="5" cols="50"></textarea>
+						</form>
+						
+					</div>
+					
+					<div class="contact_info col-xl-6">
+					
+						<ul>
+							<li>Email: tudorgalatan@gmail.com</li>
+							<li>
+								<a href="https://www.facebook.com/galatantudor1" target="_blank">Facebook</a>
+							</li>
+							<li>
+								<a href="https://www.instagram.com/tudorgalatan/" target="_blank">Instagram</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/tudorgalatan" target="_blank">Twitter</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">LinkedIn</a>
+							</li>
+							<li>
+								<a href="https://github.com/TudorGalatan" target="_blank">GitHub</a>
+							</li>
+						<ul>
+						
+					</div>
 					
 				</div>
 				
@@ -372,6 +398,20 @@
 		</footer>
 		
 		<!-- End Footer -->
+		
+		
+		<script>
+		
+			var inview = new Waypoint.Inview
+			({
+				element: document.getElementById("contact_me"),
+				enter: function(direction)
+				{
+					alert("OK");
+				}
+			})
+			
+		</script>
 		
 		
 	</body>
