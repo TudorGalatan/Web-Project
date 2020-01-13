@@ -24,8 +24,8 @@ function watchCode ()
 
 function getJS ()
 {
-	return src('node_modules/bootstrap/dist/js/bootstrap.min.js', { sourcemaps: true })
-	.pipe(concat('app.min.js'))
+	return src(['./node_modules/bootstrap/dist/js/bootstrap.min.js', './node_modules/jquery/dist/jquery.min.js'], { sourcemaps: true })
+	/* .pipe(concat('app.min.js')) */
 	.pipe(dest('src/js', { sourcemaps: true }))
 }
 

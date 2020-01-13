@@ -1,26 +1,33 @@
 /* Variables */
-
-$gray: #535353;
-$light-gray: #A4A4A4;
+$gray: #414141;
+$light_gray: #A4A4A4;
+$dark_gray: #3b3b3b;
 $temporary_1: red;
 $temporary_2: green;
 $temporary_3: blue;
 $temporary_4: white;
 
+/* Variables for Background */
+$white_background: #ffffff;
+$black_background: #1e2123;
+
+/* Variables for Links */
+$unvisited_link: #979797;
+$hover_link: #000000;
+$active_link: #575757;
+$visited_link: #3f3f3f;
 
 
 
-/* Website Sections */
-
+/* Website Design */
 body
 {
 	font-family: 'Ubuntu';
 	
-	/* Header */
-	
+	/* Start Header */
 	header
 	{
-		background: white;
+		background: $white_background;
 		
 		.logo
 		{
@@ -32,12 +39,11 @@ body
 					display: block;
 					margin-left: auto;
 					margin-right: auto;
-					margin-top: 13px;
-					margin-bottom: 13px;
+					margin-top: 15px;
+					margin-bottom: 15px;
 				}
 			}
 		}
-
 		
 		nav
 		{
@@ -50,45 +56,66 @@ body
 					float: left;
 					list-style: none;
 					padding: 5px 40px 5px 40px;
-					color: $gray;
 					font-size: 26px;
 					
-					a
+					a:link
 					{
-						color: $gray;
-					}
+                        color: $unvisited_link;
+                    }
+
+                    a:active
+                    {
+                        color: $active_link;
+                    }
+
+                    a:hover
+                    {
+                        color: $hover_link;
+                    }
+
+                    a:visited
+                    {
+                        color: $visited_link;
+                    }
 				}
 			}
 		}
-	}
+    }
+    /* End Header */
 
-
-
-	/* Banner */
-	
+	/* Start Banner */
 	.banner
 	{
 		&_image
 		{
-
-		}
+            
+        }
 		
 		&_content
 		{
-			background: rgba(0, 0, 0, 0.6);
 			position: absolute;
 			z-index: 2;
 			top: 50%;
 			right: 10%;
 			padding: 25px;
-			animation: fade 2s linear;
+			animation: fade 1s linear;
 			text-align: center;
-			
+
 			border-style: solid;
 			border-width: 6px;
 			border-radius: 40px;
-			border-color: white;
-			
+            border-color: white;
+
+            .blur
+            {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.7);
+                filter: blur(30px);
+                top: 0;
+                left: 0;
+            }
 			
 			h1
 			{
@@ -100,8 +127,7 @@ body
 				position: relative;
 				animation: fadeTop 1s linear;
 			}
-			
-			
+            
 			h2
 			{
 				font-size: 36px;
@@ -113,7 +139,6 @@ body
 				position: relative;
 				animation: fadeTop 1s linear;
 			}
-			
 			
 			button
 			{
@@ -131,17 +156,15 @@ body
 				animation: fadeBottom 1s linear;
 			}
 		}
-	}
+    }
+    /* End Banner */
 
-
-
-	/* About Me */
-	
+	/* Start About Me */
 	.about_me
 	{
 		&_container
 		{
-			background: white;
+			background: $white_background;
 			padding-top: 150px;
 			padding-bottom: 150px;
 			
@@ -151,8 +174,9 @@ body
 				
 				.photo_holder
 				{
-					background: $light-gray;
+					background: $light_gray;
 					transform: rotate(45deg);
+					opacity: 0;
 					
 					border-style: solid;
 					border-width: 5px;
@@ -173,7 +197,7 @@ body
 				
 				.content_holder
 				{
-					background: $gray;
+					background: $black_background;
 					transform: rotate(45deg);
 					
 					border-style: solid;
@@ -207,13 +231,13 @@ body
 							{
 								float: left;
 								list-style: none;
-								padding: 5px 5px 5px 5px;
+								padding: 5px 20px 5px 20px;
 								
 								a
 								{
 									img
 									{
-										width: 16px;
+										width: 20px;
 									}
 								}
 							}
@@ -223,28 +247,22 @@ body
 			}
 		}		
 	}
-	
+	/* End About Me */
 
-	
-	
-	
-	/* Education */
-	
+	/* Start Education */
 	.education
 	{
-		background: $gray;
+		background: $black_background;
 		color: white;
 		padding-top: 50px;
 		padding-bottom: 50px;
 		
 		&_container
-		{
-			color: white;
-			
+		{	
 			.title
 			{
 				text-transform: uppercase;
-				letter-spacing: 5px;
+				letter-spacing: 10px;
 				padding-bottom: 30px;
 			}
 			
@@ -254,28 +272,32 @@ body
 				{
 					h1
 					{
-						font-size: 20px;
+						font-size: 24px;
 						font-style: bold;
-						text-align: center;
+                        text-align: center;
+                        letter-spacing: 5px;
 					}
 					
 					h2
 					{
-						font-size: 18px;
-						text-align: center;
+                        font-size: 20px;
+                        text-align: center;
+                        letter-spacing: 2px;
 					}
 					
 					h3
 					{
 						font-size: 16px;
 						font-style: italic;
-						text-align: center;
+                        text-align: center;
+                        letter-spacing: 2px;
 					}
 					
 					h4
 					{
 						font-size: 16px;
-						text-align: center;
+                        text-align: center;
+                        letter-spacing: 2px;
 					}
 					
 					p
@@ -286,16 +308,13 @@ body
 				}			
 			}
 		}
-	}
-	
+    }
+    /* End Education */
 
-	
-	
-	/* Personal Skills */
-	
+	/* Start Personal Skills */	
 	.personal_skills
 	{
-		background: white;
+		background: $white_background;
 		color: black;
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -305,7 +324,7 @@ body
 			.title
 			{
 				text-transform: uppercase;
-				letter-spacing: 5px;
+				letter-spacing: 10px;
 				padding-bottom: 30px;
 			}
 			
@@ -315,7 +334,8 @@ body
 				{
 					h1
 					{
-						font-size: 20px;
+                        font-size: 24px;
+                        letter-spacing: 5px;
 					}
 					
 					ul
@@ -323,23 +343,19 @@ body
 						li
 						{
 							list-style: none;
-							font-size: 16px;
+                            font-size: 16px;
 						}
 					}
 				}
 			}
 		}
-	}
+    }
+    /* End Personal Skills*/
 	
-
-	
-	
-	
-	/* Work Experience */
-	
+	/* Start Work Experience */
 	.work_experience
 	{
-		background: $gray;
+		background: $black_background;
 		color: white;
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -349,7 +365,7 @@ body
 			.title
 			{
 				text-transform: uppercase;
-				letter-spacing: 5px;
+				letter-spacing: 10px;
 				padding-bottom: 30px;
 			}
 			
@@ -357,7 +373,7 @@ body
 			{
 				.position
 				{
-					.title
+					&_title
 					{
 						h1
 						{
@@ -371,7 +387,7 @@ body
 						}
 					}
 					
-					.description
+					&_description
 					{
 						h1
 						{
@@ -386,16 +402,13 @@ body
 				}	
 			}
 		}		
-	}
+    }
+    /* End Work Experience */
 	
-	
-	
-	
-	/* Contact Me */
-	
+	/* Start Contact Me */
 	.contact_me
 	{
-		background: white;
+		background: $white_background;
 		color: black;
 		padding-top: 50px;
 		padding-bottom: 50px;
@@ -405,7 +418,7 @@ body
 			.title
 			{
 				text-transform: uppercase;
-				letter-spacing: 5px;
+				letter-spacing: 10px;
 				padding-bottom: 30px;
 			}
 			
@@ -442,14 +455,14 @@ body
 						{
 							list-style: none;
 							
-							a
+							a:link
 							{
 								
 							}
 							
 							a:hover
 							{
-								color: black;
+								color: hover;
 							}
 						}
 					}
@@ -457,14 +470,13 @@ body
 			}
 		}	
 	}
+	/* End Contact Me */
 	
 	
-	
-	/* Footer */
-	
+	/* Start Footer */
 	footer
 	{
-		background: $gray;
+		background: $black_background;
 		color: white;
 		text-align: center;
 		
@@ -482,10 +494,10 @@ body
 					}
 				}
 			}
-		}
-	}
+        }
+    }
+    /* End Footer */
 }
-
 
 
 
@@ -504,6 +516,13 @@ body
 		opacity: 1;
 		top: 0px;
 	}
+}
+
+
+.animation_fadeTop
+{
+	animation: fadeTop 1s linear;
+	animation-fill-mode: forwards;
 }
 
 
