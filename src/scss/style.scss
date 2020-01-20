@@ -7,22 +7,38 @@ $temporary_2: green;
 $temporary_3: blue;
 $temporary_4: white;
 
-/* Variables for Background */
+/* Colours for Background */
 $white_background: #ffffff;
 $black_background: #1e2123;
 
-/* Variables for Links */
+/* Colours for Links */
 $unvisited_link: #979797;
 $hover_link: #000000;
 $active_link: #575757;
 $visited_link: #3f3f3f;
 
+/* Other Colours */
+$arrow_colour: #767676;
 
 
 /* Website Design */
 body
 {
-	font-family: 'Ubuntu';
+    font-family: 'Ubuntu';
+    
+    /* Start Home Arrow */
+    .home_arrow
+    {
+        color: $arrow_colour;
+        display: none;
+        font-size: 30px;
+        position: fixed;
+        z-index: 3;
+        bottom: 20px;
+        right: 30px;
+        padding: 10px;
+    }
+    /* End Home Arrow */
 	
 	/* Start Header */
 	header
@@ -58,7 +74,7 @@ body
 					padding: 5px 40px 5px 40px;
 					font-size: 26px;
 					
-					a:link
+					a
 					{
                         color: $unvisited_link;
                     }
@@ -72,11 +88,13 @@ body
                     {
                         color: $hover_link;
                     }
-
+                    
+                    /*
                     a:visited
                     {
                         color: $visited_link;
                     }
+                    */
 				}
 			}
 		}

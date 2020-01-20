@@ -21,27 +21,44 @@
         <!-- CSS Files -->
         <link rel = "stylesheet" type = "text/css" href = "css/app.min.css" />
         <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+
+        <!-- Font Awesome -->
+        <link rel = "stylesheet" type = "text/css" href = "css/font-awesome.min.css" />
         
         <!-- JavaScript Files -->
 		<script src = "js/noframework.waypoints.min.js"></script>
-		<script src = "js/inview.min.js"></script>
-		<script src = "js/jquery.min.js"></script>
+        <script src = "js/inview.min.js"></script>
+
+        <!-- jQuery -->
+        <script src = "js/jquery.min.js"></script>
+
+        <!-- Bootstrap -->
+        <script src = "js/bootstrap.min.js"></script>
 		
 	</head>
 
 	<body>
+
+        <!-- Start Home Arrow -->
+        <div class = "home_arrow">
+            <i class = "fa fa-arrow-up" aria-hidden = "true"></i>
+        </div>
+        <!-- End Home Arrow -->
 	
 		<!-- Start Header -->	
-		<header class = "container-fluid">
+		<header class = "container-fluid" id = "header">
 		
 			<div class = "row">
-			
+            
+                <!--
 				<div class = "logo col-xs-4 col-sm-4 col-md-2 col-xl-2">
 					<a href = "index.html">
 						<img src = "images/Logo/5.png" alt = "A logo with my name." />
 					</a>
 				</div>
-			
+                -->
+
+                <!--
 				<nav class = "col-xl-10 col-md-10 col-sm-8 col-xs-8">
 					<ul>
 						<li>
@@ -64,6 +81,41 @@
 						</li>
 					</ul>
                 </nav>
+                -->
+
+                <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+                
+                    <a class = "navbar-brand" href = "#header">
+                        <img src = "images/Logo/7.png" alt = "A logo with my name." />
+                    </a>
+                
+                    <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarSupportedContent" aria-controls = "navbarSupportedContent" aria-expanded = "false" aria-label = "Toggle navigation">
+                        <span class = "navbar-toggler-icon"></span>
+                    </button>
+                
+                    <div class = "collapse navbar-collapse" id = "navbarSupportedContent">
+                        <ul class = "navbar-nav mr-auto">
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "#header">Home Page</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#about_me">About Me</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "#education">Education</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class = "nav-link" href = "#personal_skills">Personal Skills</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "#work_experience">Work Experience</a>
+                            </li>
+                            <li class = "nav-item">
+                                <a class="nav-link" href = "#contact_me">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
                 
 			</div>
 		
@@ -83,7 +135,7 @@
 		<!-- End Banner -->
 
 		<!-- Start About Me -->
-		<div class = "about_me">
+		<div class = "about_me" id = "about_me">
 		
 			<div class = "about_me_container container" id = "about_me">
 			
@@ -368,17 +420,25 @@
 		<!-- End Footer -->
 		
 		<script>
-		
+        
 			var inview = new Waypoint.Inview
 			({
 				element: document.getElementById("banner_title"),
 				enter: function(direction)
 				{
 					$("#photo_holder").addClass('animation_fadeTop');
-					alert($("body .about_me .content_holder h1").text());
 				}
 			})
-			
+
+            var inview_2 = new Waypoint.Inview
+            ({
+                element: document.getElementById("about_me"),
+                enter: function(direction)
+                {
+                    $(".home_arrow").show();
+                }
+            })
+
 		</script>
 		
 	</body>
