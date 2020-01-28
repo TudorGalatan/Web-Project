@@ -18,7 +18,7 @@ $active_link: #575757;
 $visited_link: #3f3f3f;
 
 /* Other Colours */
-$arrow_colour: #767676;
+$homeArrowColour: #767676;
 
 
 /* Website Design */
@@ -29,21 +29,25 @@ body
     /* Start Home Arrow */
     .home_arrow
     {
-        color: $arrow_colour;
         display: none;
-        font-size: 30px;
         position: fixed;
         z-index: 3;
         bottom: 20px;
-        right: 30px;
+        right: 40px;
         padding: 10px;
+        font-size: 30px;
+
+        a
+        {
+            color: $homeArrowColour;
+        }
     }
     /* End Home Arrow */
 	
 	/* Start Header */
 	header
 	{
-		background: $white_background;
+        background: $white_background;
 		
 		.logo
 		{
@@ -126,11 +130,11 @@ body
 
             .blur
             {
+                border-radius: 35px;
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                background: rgba(0, 0, 0, 0.7);
-                filter: blur(30px);
+                background: rgba(0, 0, 0, 0.5);
                 top: 0;
                 left: 0;
             }
@@ -216,7 +220,8 @@ body
 				.content_holder
 				{
 					background: $black_background;
-					transform: rotate(45deg);
+                    transform: rotate(45deg);
+                    opacity: 0;
 					
 					border-style: solid;
 					border-width: 5px;
@@ -245,17 +250,21 @@ body
 						
 						ul
 						{
+                            list-style: none;
+                            padding: 0;
+
 							li
 							{
 								float: left;
-								list-style: none;
-								padding: 5px 20px 5px 20px;
+                                padding-top: 30px;
+                                padding-right: 40px;
 								
 								a
 								{
-									img
+									i
 									{
-										width: 20px;
+                                        font-size: 40px;
+                                        color: white;
 									}
 								}
 							}
@@ -288,6 +297,8 @@ body
 			{
 				.institution
 				{
+                    opacity: 0;
+
 					h1
 					{
 						font-size: 24px;
@@ -350,6 +361,8 @@ body
 			{
 				.skill_types
 				{
+                    opacity: 0;
+
 					h1
 					{
                         font-size: 24px;
@@ -391,6 +404,8 @@ body
 			{
 				.position
 				{
+                    opacity: 0;
+
 					&_title
 					{
 						h1
@@ -467,21 +482,33 @@ body
 				
 				.contact_info
 				{
+                    padding: 180px 0px;
+
+                    p
+                    {
+                        font-size: 24px;
+                        letter-spacing: 2px;
+                    }
+
 					ul
 					{
+                        list-style: none;
+                        padding: 0;
+
 						li
 						{
-							list-style: none;
-							
-							a:link
-							{
-								
-							}
-							
-							a:hover
-							{
-								color: hover;
-							}
+                            float: left;
+                            padding-top: 10px;
+                            padding-right: 58px;
+
+                            a
+                            {
+                                i
+                                {
+                                    font-size: 40px;
+                                    color: black;
+                                }
+                            }
 						}
 					}
 				}
@@ -494,24 +521,67 @@ body
 	/* Start Footer */
 	footer
 	{
-		background: $black_background;
-		color: white;
-		text-align: center;
-		
-		div
-		{
-			ul
-			{
-				list-style: none;
-				
-				li
-				{
-					a
-					{
-						
-					}
-				}
-			}
+        background: $black_background;
+
+        .container
+        {
+            color: white;
+            
+            .social_media
+            {
+                padding-left: 350px;
+                padding-right: 350px;
+
+                ul
+                {
+                    padding: 0;
+                    list-style: none;
+                    
+                    li
+                    {
+                        display: inline;
+                        padding-right: 50px;
+    
+                        a
+                        {
+                            i
+                            {
+                                color: white;
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            
+            .other_information
+            {
+                padding-left: 350px;
+                padding-right: 350px;
+
+                ul
+                {
+                    padding: 0;
+                    list-style: none;
+                    line-height: 30px;
+                    li
+                    {
+                        font-size: 18px;
+                        letter-spacing: 200;
+                    }
+                }
+            }
+
+            .copyright
+            {
+                padding-left: 350px;
+                padding-right: 350px;
+
+                p
+                {
+                    font-size: 18px;
+                }
+            }
         }
     }
     /* End Footer */
@@ -537,13 +607,6 @@ body
 }
 
 
-.animation_fadeTop
-{
-	animation: fadeTop 1s linear;
-	animation-fill-mode: forwards;
-}
-
-
 @keyframes fadeBottom
 {
 	from
@@ -560,6 +623,38 @@ body
 }
 
 
+@keyframes fadeRight
+{
+	from
+	{
+		opacity: 0;
+		right: -30px;
+	}
+	
+	to
+	{
+		opacity: 1;
+		right: 0px;
+	}
+}
+
+
+@keyframes fadeLeft
+{
+	from
+	{
+		opacity: 0;
+		right: 30px;
+	}
+	
+	to
+	{
+		opacity: 1;
+		right: 0px;
+	}
+}
+
+
 @keyframes fade
 {
 	from
@@ -571,4 +666,49 @@ body
 	{
 		opacity: 1;
 	}
+}
+
+
+.animation_fadeTop
+{
+	animation: fadeTop 1s linear;
+	animation-fill-mode: forwards;
+}
+
+
+.animation_fadeTopDelay1
+{
+    animation: fadeTop 1s linear;
+    animation-delay: 0.5s;
+	animation-fill-mode: forwards;
+}
+
+
+.animation_fadeTopDelay2
+{
+    animation: fadeTop 1s linear;
+    animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+
+.animation_fadeTopDelay3
+{
+    animation: fadeTop 1s linear;
+    animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+
+.animation_fadeRight
+{
+	animation: fadeRight 1s linear;
+	animation-fill-mode: forwards;
+}
+
+
+.animation_fadeLeft
+{
+	animation: fadeLeft 1s linear;
+	animation-fill-mode: forwards;
 }

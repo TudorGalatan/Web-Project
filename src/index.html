@@ -41,49 +41,16 @@
 
         <!-- Start Home Arrow -->
         <div class = "home_arrow">
-            <i class = "fa fa-arrow-up" aria-hidden = "true"></i>
+            <a href = "#header"><i class = "fa fa-arrow-up" aria-hidden = "true"></i></a>
         </div>
         <!-- End Home Arrow -->
-	
+        
 		<!-- Start Header -->	
 		<header class = "container-fluid" id = "header">
 		
 			<div class = "row">
-            
-                <!--
-				<div class = "logo col-xs-4 col-sm-4 col-md-2 col-xl-2">
-					<a href = "index.html">
-						<img src = "images/Logo/5.png" alt = "A logo with my name." />
-					</a>
-				</div>
-                -->
 
-                <!--
-				<nav class = "col-xl-10 col-md-10 col-sm-8 col-xs-8">
-					<ul>
-						<li>
-							<a href = "index.html">Home Page</a>
-						</li>
-						<li>
-							<a href = "#about_me">About Me</a>
-						</li>
-						<li>
-							<a href = "#education">Education</a>
-						</li>
-						<li>
-							<a href = "#personal_skills">Personal Skills</a>
-						</li>
-						<li>
-							<a href = "#work_experience">Work Experience</a>
-						</li>
-						<li>
-							<a href = "#contact_me">Contact Me</a>
-						</li>
-					</ul>
-                </nav>
-                -->
-
-                <nav class = "navbar navbar-expand-lg navbar-light bg-light">
+                <nav class = "navbar navbar-expand-lg navbar-light">
                 
                     <a class = "navbar-brand" href = "#header">
                         <img src = "images/Logo/7.png" alt = "A logo with my name." />
@@ -129,7 +96,11 @@
                 <div class = "blur"></div>
 				<h1>I'm Tudor.</h1>
 				<h2>Software Developer</h2>
-				<button>Contact Me</button>
+				<button>
+                    <a href = "#contact_me">
+                        Contact Me
+                    </a>
+                </button>
 			</div>
 		</div>
 		<!-- End Banner -->
@@ -137,7 +108,7 @@
 		<!-- Start About Me -->
 		<div class = "about_me" id = "about_me">
 		
-			<div class = "about_me_container container" id = "about_me">
+			<div class = "about_me_container container">
 			
 				<div class = "row">
 				
@@ -147,7 +118,7 @@
 						</div>
 					</div>
 					
-					<div class = "content_holder col-xl-6">
+					<div class = "content_holder col-xl-6" id = "content_holder">
 						<div class = "content">
 							<h1 id = "banner_title">Tudor Gălățan</h1>
 							<h2>Software Developer</h2>
@@ -155,27 +126,27 @@
 							<ul>
 								<li>
 									<a href = "https://www.facebook.com/galatantudor1" target = "_blank">
-										<img src = "images/Icons/Facebook.png" alt = "Facebook logo." />
+										<i class = "fa fa-facebook-square" aria-hidden = "true"></i>
 									</a>
 								</li>
 								<li>
 									<a href = "https://www.instagram.com/tudorgalatan/" target = "_blank">
-										<img src = "images/Icons/Instagram.png" alt = "Instagram logo." />
+										<i class = "fa fa-instagram" aria-hidden = "true"></i>
 									</a>
 								</li>
 								<li>
 									<a href = "https://twitter.com/tudorgalatan" target = "_blank">
-										<img src = "images/Icons/Twitter.png" alt = "Twitter logo." />
+                                        <i class = "fa fa-twitter-square" aria-hidden = "true"></i>
 									</a>
 								</li>
 								<li>
 									<a href = "https://www.linkedin.com/in/tudorgalatan/" target = "_blank">
-										<img src = "images/Icons/LinkedIn.png" alt = "LinkedIn logo." />
+                                        <i class = "fa fa-linkedin-square" aria-hidden = "true"></i>
 									</a>
 								</li>
 								<li>
 									<a href = "https://github.com/TudorGalatan" target = "_blank">
-										<img src = "images/Icons/GitHub.png" alt = "GitHub logo." />
+										<i class = "fa fa-github-square" aria-hidden = "true"></i>
 									</a>
 								</li>
 							</ul>
@@ -200,7 +171,7 @@
 			
 				<div class = "content row">
 				
-					<div class = "institution col-xl-3">
+					<div class = "institution col-xl-3" id = "institution_1">
 						<h1>Școala Gimnazială Nr. 1</h1>
 						<h2>Elementary School</h2>
 						<h3>General Studies</h3>
@@ -208,7 +179,7 @@
 						<p>During elementary school I've gained basic knowledge about reading and writing, mathematics and other general subjects.</p>
 					</div>
 				
-					<div class = "institution col-xl-3">
+					<div class = "institution col-xl-3" id = "institution_2">
 						<h1>Școala Gimnazială Nr. 1</h1>
 						<h2>Middle School</h2>
 						<h3>General Studies</h3>
@@ -216,7 +187,7 @@
 						<p>During middle school I've expanded my knowledge regarding mathematics, I've learned the basics of physics and chemistry. I also expanded my general knowledge regarding popular subjects.</p>
 					</div>
 					
-					<div class = "institution col-xl-3">
+					<div class = "institution col-xl-3" id = "institution_3">
 						<h1>"Ion Luca" Theoretical High School</h1>
 						<h2>High School</h2>
 						<h3>Mathematics and Computer Science</h3>
@@ -224,7 +195,7 @@
 						<p>During high school I've started to learn Computer Science basics and I started to focus on the tech field, gaining knowledge about data structures and algorithms and experience with the C and C++ programming languages. I participated in some Computer Science related competitions and olympiads, getting a few prizes.</p>
 					</div>
 					
-					<div class = "institution col-xl-3">
+					<div class = "institution col-xl-3" id = "institution_4">
 						<h1>Babeș-Bolyai University</h1>
 						<h2>Bachelor's Degree</h2>
 						<h3>Computer Science</h3>
@@ -240,9 +211,9 @@
 		<!-- End Education -->
 		
 		<!-- Start Personal Skills -->
-		<div class = "personal_skills">
+		<div class = "personal_skills" id = "personal_skills">
 		
-			<div class = "personal_skills_container container" id = "personal_skills">
+			<div class = "personal_skills_container container" id = "personal_skills_container">
 			
 				<div class = "title row">
 					<h1>Personal Skills</h1>
@@ -250,7 +221,7 @@
 			
 				<div class = "content row">
 				
-					<div class = "skill_types col-xl-4">
+					<div class = "skill_types col-xl-4" id = "technical_skills">
 						<h1>Technical Skills</h1>
 						<ul>
 							<li>Concepts: graphs, data structures and algorithms, web development</li>
@@ -259,7 +230,7 @@
 						</ul>
                     </div>
 
-                    <div class = "skill_types col-xl-4">
+                    <div class = "skill_types col-xl-4" id = "language_skills">
 						<h1>Language Skills</h1>
 						<ul>
 							<li>Romanian: Native</li>
@@ -268,7 +239,7 @@
 						</ul>
 					</div>
 					
-					<div class = "skill_types col-xl-4">
+					<div class = "skill_types col-xl-4" id = "soft_skills">
 						<h1>Soft Skills</h1>
 						<ul>
 							<li>Communication skills</li>
@@ -285,16 +256,16 @@
 		<!-- End Personal Skills -->
 		
 		<!-- Start Work Experience -->
-		<div class = "work_experience">
-			<div class = "work_experience_container container" id = "work_experience">
+		<div class = "work_experience" id = "work_experience">
+			<div class = "work_experience_container container" id = "work_experience_container">
 			
 				<div class = "title row">
 					<h1>Work Experience</h1>
 				</div>
 			
-				<div class = "content row">
+				<div class = "content row" id = "work_experience_content">
 				
-					<div class = "position col-xl-6">
+					<div class = "position col-xl-6" id = "position_1">
 						<div class = "position_title">
 							<h1>WellCode</h1>
 							<h2>2017 - 2019</h2>
@@ -305,7 +276,7 @@
 						</div>
 					</div>
 					
-					<div class = "position col-xl-6">
+					<div class = "position col-xl-6" id = "position_2">
 						<div class = "position_title">
 							<h1>Hai la Olimpiadă!</h1>
 							<h2>2019</h2>
@@ -350,25 +321,39 @@
 					</div>
 					
 					<div class = "contact_info col-xl-6">
-					
-						<ul>
-							<li>Email: tudorgalatan@gmail.com</li>
-							<li>
-								<a href = "https://www.facebook.com/galatantudor1" target = "_blank">Facebook</a>
-							</li>
-							<li>
-								<a href = "https://www.instagram.com/tudorgalatan/" target = "_blank">Instagram</a>
-							</li>
-							<li>
-								<a href = "https://twitter.com/tudorgalatan" target = "_blank">Twitter</a>
-							</li>
-							<li>
-								<a href = "https://www.linkedin.com/in/tudorgalatan/" target = "_blank">LinkedIn</a>
-							</li>
-							<li>
-								<a href = "https://github.com/TudorGalatan" target = "_blank">GitHub</a>
-							</li>
-						<ul>
+                    
+                        <p>
+                            Email: tudorgalatan@gmail.com
+                        </p>
+
+                        <ul>
+                            <li>
+                                <a href = "https://www.facebook.com/galatantudor1" target = "_blank">
+                                    <i class = "fa fa-facebook-square" aria-hidden = "true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.instagram.com/tudorgalatan/" target = "_blank">
+                                    <i class = "fa fa-instagram" aria-hidden = "true"></i>
+                                </a>
+                                
+                            </li>
+                            <li>
+                                <a href = "https://twitter.com/tudorgalatan" target = "_blank">
+                                    <i class = "fa fa-twitter-square" aria-hidden = "true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://www.linkedin.com/in/tudorgalatan/" target = "_blank">
+                                    <i class = "fa fa-linkedin-square" aria-hidden = "true"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href = "https://github.com/TudorGalatan" target = "_blank">
+                                    <i class = "fa fa-github-square" aria-hidden = "true"></i>
+                                </a>
+                            </li>
+                        <ul>
 						
 					</div>
 					
@@ -378,68 +363,64 @@
 		</div>
 		<!-- End Contact Me -->
 		
-		<!-- Start Footer -->
-		<footer class="container-fluid">
-		
-			<div>
-				<ul>
-					<li>
-						<a>Email: tudorgalatan@gmail.com</a>
-					</li>
-					<li>
-						<a href="https://www.facebook.com/galatantudor1" target="_blank">Facebook</a>
-					</li>
-					<li>
-						<a href="https://www.instagram.com/tudorgalatan/" target="_blank">Instagram</a>
-					</li>
-					<li>
-						<a href="https://twitter.com/tudorgalatan" target="_blank">Twitter</a>
-					</li>
-					<li>
-						<a href="https://www.linkedin.com/in/tudorgalatan/" target="_blank">LinkedIn</a>
-					</li>
-					<li>
-						<a href="https://github.com/TudorGalatan" target="_blank">GitHub</a>
-					</li>
-				<ul>
-			</div>
-			
-			<div>
-				<ul>
-					<li>Location: Cluj-Napoca, Cluj County, Romania</li>
-					<li>Email: tudorgalatan@gmail.com</li>
-					<li>Phone Number: (+40) 720 914 270</li>
-				<ul>
-			</div>
-			
-			<div>
-				<p>Copyright info</p>
-			</div>
-			
-		</footer>
-		<!-- End Footer -->
-		
-		<script>
-        
-			var inview = new Waypoint.Inview
-			({
-				element: document.getElementById("banner_title"),
-				enter: function(direction)
-				{
-					$("#photo_holder").addClass('animation_fadeTop');
-				}
-			})
+        <!-- Start Footer -->
+        <footer>
 
-            var inview_2 = new Waypoint.Inview
-            ({
-                element: document.getElementById("about_me"),
-                enter: function(direction)
-                {
-                    $(".home_arrow").show();
-                }
-            })
+            <div class = "container container-fluid">
+		
+                <div class = "social_media row">
+                    <ul>
+                        <li>
+                            <a href = "https://www.facebook.com/galatantudor1" target = "_blank">
+                                <i class = "fa fa-facebook-square" aria-hidden = "true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.instagram.com/tudorgalatan/" target = "_blank">
+                                <i class = "fa fa-instagram" aria-hidden = "true"></i>
+                            </a>
+                            
+                        </li>
+                        <li>
+                            <a href = "https://twitter.com/tudorgalatan" target = "_blank">
+                                <i class = "fa fa-twitter-square" aria-hidden = "true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://www.linkedin.com/in/tudorgalatan/" target = "_blank">
+                                <i class = "fa fa-linkedin-square" aria-hidden = "true"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href = "https://github.com/TudorGalatan" target = "_blank">
+                                <i class = "fa fa-github-square" aria-hidden = "true"></i>
+                            </a>
+                        </li>
+                    <ul>
+                </div>
+                
+                <div class = "other_information row">
+                    <ul>
+                        <li>Location: Cluj-Napoca, Cluj County, Romania</li>
+                        <li>Email: tudorgalatan@gmail.com</li>
+                        <li>Phone Number: (+40) 720 914 270</li>
+                    <ul>
+                </div>
+                
+                <div class = "copyright row">
+                    <p>
+                        &#169; Tudor Gălățan 2020
+                    </p>
+                </div>
+                
+            </div>
 
-		</script>
+        </footer>
+
+        <!-- End Footer -->
+
+        <!-- My JavaScript Files -->
+        <script src = "js/javascript.js" type = "text/javascript"></script>
 		
 	</body>
 
