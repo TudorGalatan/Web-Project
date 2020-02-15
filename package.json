@@ -5,23 +5,25 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node script.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.3.1",
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "bootstrap": "^4.4.1",
     "finalhandler": "^1.1.2",
-    "font-awesome": "^4.7.0",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
-    "gulp-csso": "^3.0.1",
     "gulp-sass": "^4.0.2",
     "gulp-scss": "^1.4.0",
     "http": "0.0.0",
     "jquery": "^3.4.1",
     "serve-static": "^1.14.1",
     "waypoints": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp-csso": "^3.0.1"
   }
 }

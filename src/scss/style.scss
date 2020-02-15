@@ -1,6 +1,6 @@
 /* Variables */
 $gray: #414141;
-$light_gray: #A4A4A4;
+$light_gray: rgb(129, 129, 129);
 $dark_gray: #3b3b3b;
 $temporary_1: red;
 $temporary_2: green;
@@ -48,22 +48,25 @@ body
 	header
 	{
         background: $white_background;
-		
-		.logo
-		{
-			a
-			{
-				img
-				{
-					height: 130px;
-					display: block;
-					margin-left: auto;
-					margin-right: auto;
-					margin-top: 15px;
-					margin-bottom: 15px;
-				}
-			}
-		}
+
+        .row
+        {
+            .navbar
+            {
+                .logo
+                {
+                    img
+                    {
+                        height: 130px;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-top: 15px;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
 		
 		nav
 		{
@@ -175,7 +178,12 @@ body
 				border-radius: 10px;
 				border-color: white;
 				position: relative;
-				animation: fadeBottom 1s linear;
+                animation: fadeBottom 1s linear;
+                
+                a:visited
+                {
+                    color: white;
+                }
 			}
 		}
     }
