@@ -15,11 +15,11 @@ var server = http.createServer
 (
     function onRequest (request, response)
     {
-        serve(request, response, finalHandler(request, response));
+        serve (request, response, finalHandler (request, response));
     }
 );
 
 
 
 // Listen to the port
-server.listen(3000);
+server.listen (3000);
