@@ -1,4 +1,4 @@
-/* Variables */
+// Variables
 $gray: #414141;
 $light_gray: rgb(129, 129, 129);
 $dark_gray: #3b3b3b;
@@ -7,17 +7,16 @@ $temporary_2: green;
 $temporary_3: blue;
 $temporary_4: white;
 
-/* Colours for Background */
+// Colours for Background
 $white_background: #ffffff;
 $black_background: #1e2123;
 
-/* Colours for Links */
-$unvisited_link: #979797;
+// Colours for Links
+$unvisited_link: #535353;
 $hover_link: #000000;
 $active_link: #575757;
-$visited_link: #3f3f3f;
 
-/* Other Colours */
+// Other Colours
 $homeArrowColour: #767676;
 
 
@@ -26,7 +25,7 @@ body
 {
     font-family: 'Ubuntu';
     
-    /* Start Home Arrow */
+    // Start Home Arrow
     .home_arrow
     {
         display: none;
@@ -42,9 +41,9 @@ body
             color: $homeArrowColour;
         }
     }
-    /* End Home Arrow */
+    // End Home Arrow
 	
-	/* Start Header */
+	// Start Header
 	header
 	{
         background: $white_background;
@@ -53,60 +52,58 @@ body
         {
             .navbar
             {
+                margin: auto;
+
                 .logo
                 {
                     img
                     {
                         height: 130px;
                         display: block;
-                        margin-left: auto;
-                        margin-right: auto;
-                        margin-top: 15px;
-                        margin-bottom: 15px;
+                        margin: 15px auto;
+                    }
+                }
+
+                .navbar-toggler
+                {
+                    span
+                    {
+                        
+                    }
+                }
+
+                #navbarSupportedContent
+                {
+                    .navbar-nav     // ul
+                    {
+                        .nav-item   // li
+                        {
+                            float: left;
+                            list-style: none;
+                            padding: 5px 25px;
+                            font-size: 28px;
+
+                            a
+                            {
+                                color: $unvisited_link;
+                            }
+        
+                            a:hover
+                            {
+                                color: $hover_link;
+                            }
+                        }
+
+                        .first_element  // first li
+                        {
+                            padding-left: 50px;
+                        }
                     }
                 }
             }
         }
-		
-		nav
-		{
-			margin: auto;
-			
-			ul
-			{
-				li
-				{
-					float: left;
-					list-style: none;
-					padding: 5px 40px 5px 40px;
-					font-size: 26px;
-					
-					a
-					{
-                        color: $unvisited_link;
-                    }
-
-                    a:active
-                    {
-                        color: $active_link;
-                    }
-
-                    a:hover
-                    {
-                        color: $hover_link;
-                    }
-                    
-                    /*
-                    a:visited
-                    {
-                        color: $visited_link;
-                    }
-                    */
-				}
-			}
-		}
     }
-    /* End Header */
+    // End Header
 
 	/* Start Banner */
 	.banner
