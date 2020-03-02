@@ -18,6 +18,8 @@ $active_link: #575757;
 
 // Other Colours
 $homeArrowColour: #767676;
+$photo_holder_color: #8C8C8C;
+$photo_holder_border: #000000;
 
 
 
@@ -196,7 +198,7 @@ body
     }
     // End Banner
 
-	/* Start About Me */
+	// Start About Me
 	.about_me
 	{
 		&_container
@@ -207,28 +209,32 @@ body
 			
 			.row
 			{
-				height: 570px;
-				
 				.photo_holder
 				{
-					background: $light_gray;
+					background: $photo_holder_color;
 					transform: rotate(45deg);
-					opacity: 0;
-					
-					border-style: solid;
-					border-width: 5px;
-					border-color: black;
-					border-radius: 20px;
-					
-					.photo
-					{
-						transform: rotate(-45deg);
-						
-						img
-						{
-							width: 300px;
-						}
-					}				
+                    opacity: 0;
+                    
+                    height: 100%;
+                    padding: 0px;
+                    
+                    border-style: solid;
+                    border-width: 5px;
+                    border-color: black;
+                    border-radius: 30px;
+                    
+                    .photo
+                    {
+                        padding: 40px;
+
+                        img
+                        {
+                            width: 100%;
+                            border-style: double;
+                            border-width: 10px;
+                            border-color: black;
+                        }
+                    }
 				}
 				
 				
@@ -237,43 +243,51 @@ body
 					background: $black_background;
                     transform: rotate(45deg);
                     opacity: 0;
+
+                    width: 100%;
+                    padding: 0px;
 					
-					border-style: solid;
-					border-width: 5px;
-					border-color: black;
-					border-radius: 20px;
+                    border-style: solid;
+                    border-width: 5px;
+                    border-color: black;
+                    border-radius: 30px;
 					
 					.content
 					{
+                        height: 100%;
+                        padding: 80px;
 						transform: rotate(-45deg);
 						color: white;
 						
 						h1
 						{
-							font-size: 50px;
+                            font-size: 50px;
+                            text-align: center;
 						}
 						
 						h2
 						{
-							font-size: 30px;
+                            font-size: 30px;
+                            text-align: center;
+                            margin-top: 10px;
 						}
 						
 						p
 						{
-							font-size: 16px;
-						}
-						
-						ul
-						{
-                            list-style: none;
-                            padding: 0;
+                            font-size: 16px;
+                            text-align: justify;
+                            margin-top: 30px;
+                            margin-bottom: 70px;
+                        }
+                        
+                        .social_media_buttons
+                        {
+                            .social_media_button
+                            {
+                                float: left;
+                                width: 20%;
+                                text-align: center;
 
-							li
-							{
-								float: left;
-                                padding-top: 30px;
-                                padding-right: 40px;
-								
 								a
 								{
 									i
@@ -282,14 +296,14 @@ body
                                         color: white;
 									}
 								}
-							}
-						}
+                            }
+                        }
 					}
 				}	
 			}
 		}		
 	}
-	/* End About Me */
+	// End About Me
 
 	/* Start Education */
 	.education
