@@ -105,7 +105,7 @@ body
     }
     // End Header
 
-	/* Start Banner */
+	// Start Banner
 	.banner
 	{
 		&_image
@@ -176,15 +176,25 @@ body
 				border-color: white;
 				position: relative;
                 animation: fadeBottom 1s linear;
+
+                a
+                {
+                    color: white;
+                }
+
+                a:hover
+                {
+                    color: white;
+                }
                 
-                a:visited
+                a:active
                 {
                     color: white;
                 }
 			}
 		}
     }
-    /* End Banner */
+    // End Banner
 
 	/* Start About Me */
 	.about_me
