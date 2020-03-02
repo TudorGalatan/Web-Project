@@ -469,7 +469,7 @@ body
     }
     // End Work Experience
 	
-	/* Start Contact Me */
+	// Start Contact Me
 	.contact_me
 	{
 		background: $white_background;
@@ -487,9 +487,9 @@ body
 			}
 			
 			.content
-			{				
+			{
 				.contact_me_form
-				{					
+				{
 					form
 					{
 						label
@@ -506,8 +506,20 @@ body
 						
 						textarea
 						{
-							display: block;
-						}
+                            display: block;
+                            margin-bottom: 20px;
+                        }
+                        
+                        #submit
+                        {
+                            background: white;
+                            font-size: 20px;
+                            margin-top: 40px;
+                            border-style: solid;
+                            border-width: 2px;
+                            border-color: black;
+                            border-radius: 5px;
+                        }
 					}
 				}
 				
@@ -517,20 +529,20 @@ body
 
                     p
                     {
-                        font-size: 24px;
-                        letter-spacing: 2px;
+                        font-size: 28px;
+                        letter-spacing: 3px;
+                        text-align: center;
                     }
 
-					ul
-					{
-                        list-style: none;
-                        padding: 0;
+                    .social_media_buttons
+                    {
+                        margin-top: 40px;
 
-						li
-						{
+                        .social_media_button
+                        {
                             float: left;
-                            padding-top: 10px;
-                            padding-right: 58px;
+                            width: 20%;
+                            text-align: center;
 
                             a
                             {
@@ -540,13 +552,13 @@ body
                                     color: black;
                                 }
                             }
-						}
-					}
+                        }
+                    }
 				}
 			}
 		}	
 	}
-	/* End Contact Me */
+	// End Contact Me
 	
 	
 	/* Start Footer */
