@@ -305,7 +305,7 @@ body
 	}
 	// End About Me
 
-	/* Start Education */
+	// Start Education
 	.education
 	{
 		background: $black_background;
@@ -367,9 +367,9 @@ body
 			}
 		}
     }
-    /* End Education */
+    // End Education
 
-	/* Start Personal Skills */	
+	// Start Personal Skills
 	.personal_skills
 	{
 		background: $white_background;
@@ -396,21 +396,27 @@ body
 					{
                         font-size: 24px;
                         letter-spacing: 5px;
+                        text-align: center;
+                        margin-bottom: 20px;
 					}
 					
 					ul
 					{
-						li
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        
+                        li
 						{
-							list-style: none;
                             font-size: 16px;
+                            text-align: center;
 						}
 					}
 				}
 			}
 		}
     }
-    /* End Personal Skills*/
+    // End Personal Skills
 	
 	/* Start Work Experience */
 	.work_experience
