@@ -418,7 +418,7 @@ body
     }
     // End Personal Skills
 	
-	/* Start Work Experience */
+	// Start Work Experience
 	.work_experience
 	{
 		background: $black_background;
@@ -440,38 +440,34 @@ body
 				.position
 				{
                     opacity: 0;
+                    text-align: center;
 
-					&_title
-					{
-						h1
-						{
-							font-size: 24px;
-						}
-						
-						h2
-						{
-							font-size: 20px;
-							font-style: italic;
-						}
-					}
-					
-					&_description
-					{
-						h1
-						{
-							font-size: 26px;
-						}
-						
-						p
-						{
-							font-size: 20px;
-						}
-					}
-				}	
+                    h1
+                    {
+                        font-size: 24px;
+                    }
+                    
+                    h2
+                    {
+                        font-size: 20px;
+                        font-style: italic;
+                    }
+
+                    h3
+                    {
+                        font-size:16px;
+                    }
+                    
+                    p
+                    {
+                        font-size: 14px;
+                        text-align: justify;
+                    }
+                }
 			}
 		}		
     }
-    /* End Work Experience */
+    // End Work Experience
 	
 	/* Start Contact Me */
 	.contact_me
