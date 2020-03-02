@@ -561,73 +561,64 @@ body
 	// End Contact Me
 	
 	
-	/* Start Footer */
+	// Start Footer
 	footer
 	{
         background: $black_background;
+		color: black;
+		padding-top: 10px;
+		padding-bottom: 10px;
 
         .container
         {
             color: white;
-            
-            .social_media
-            {
-                padding-left: 350px;
-                padding-right: 350px;
 
-                ul
+            .row
+            {
+                .social_media_buttons
                 {
-                    padding: 0;
-                    list-style: none;
+                    margin: auto 0;
+                    width: 50%;
                     
-                    li
+                    .social_media_button
                     {
-                        display: inline;
-                        padding-right: 50px;
-    
+                        float: left;
+                        width: 20%;
+                        text-align: center;
+
                         a
                         {
                             i
                             {
+                                font-size: 40px;
                                 color: white;
-                                font-size: 30px;
                             }
                         }
                     }
                 }
-            }
-            
-            .other_information
-            {
-                padding-left: 350px;
-                padding-right: 350px;
-
-                ul
+                
+                .other_information
                 {
-                    padding: 0;
-                    list-style: none;
-                    line-height: 30px;
-                    li
+                    ul
                     {
-                        font-size: 18px;
-                        letter-spacing: 200;
+                        list-style: none;
+
+                        li
+                        {
+                            font-size: 18px;
+                            letter-spacing: 2px;
+                        }
+
+                        #copyright
+                        {
+                            margin-top: 10px;
+                        }
                     }
-                }
-            }
-
-            .copyright
-            {
-                padding-left: 350px;
-                padding-right: 350px;
-
-                p
-                {
-                    font-size: 18px;
                 }
             }
         }
     }
-    /* End Footer */
+    // End Footer
 }
 
 
