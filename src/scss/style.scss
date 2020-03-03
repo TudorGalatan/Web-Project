@@ -277,7 +277,8 @@ body
                             font-size: 16px;
                             text-align: justify;
                             margin-top: 30px;
-                            margin-bottom: 70px;
+                            margin-bottom: 30px;
+                            line-height: 30px;
                         }
                         
                         .social_media_buttons
@@ -326,6 +327,7 @@ body
 			{
 				.institution
 				{
+                    padding: 0px 15px;
                     opacity: 0;
 
 					h1
@@ -341,6 +343,7 @@ body
                         font-size: 20px;
                         text-align: center;
                         letter-spacing: 2px;
+                        padding-top: 6px;
 					}
 					
 					h3
@@ -349,6 +352,7 @@ body
 						font-style: italic;
                         text-align: center;
                         letter-spacing: 2px;
+                        padding-top: 6px;
 					}
 					
 					h4
@@ -356,12 +360,14 @@ body
 						font-size: 16px;
                         text-align: center;
                         letter-spacing: 2px;
+                        padding-top: 6px;
 					}
 					
 					p
 					{
 						font-size: 14px;
-						text-align: justify;
+                        text-align: justify;
+                        padding-top: 15px;
 					}
 				}			
 			}
@@ -390,6 +396,7 @@ body
 			{
 				.skill_types
 				{
+                    padding: 0px 40px;
                     opacity: 0;
 
 					h1
@@ -410,6 +417,8 @@ body
 						{
                             font-size: 16px;
                             text-align: center;
+                            margin-top: 15px;
+                            letter-spacing: 2px;
 						}
 					}
 				}
@@ -439,6 +448,7 @@ body
 			{
 				.position
 				{
+                    padding: 0px 80px;
                     opacity: 0;
                     text-align: center;
 
@@ -462,6 +472,7 @@ body
                     {
                         font-size: 14px;
                         text-align: justify;
+                        margin-top: 25px;
                     }
                 }
 			}
@@ -525,7 +536,7 @@ body
 				
 				.contact_info
 				{
-                    padding: 180px 0px;
+                    padding: 150px 0px;
 
                     p
                     {
@@ -566,8 +577,8 @@ body
 	{
         background: $black_background;
 		color: black;
-		padding-top: 10px;
-		padding-bottom: 10px;
+		padding-top: 20px;
+		padding-bottom: 6px;
 
         .container
         {
@@ -607,11 +618,12 @@ body
                         {
                             font-size: 18px;
                             letter-spacing: 2px;
+                            margin-bottom: 2px;
                         }
 
                         #copyright
                         {
-                            margin-top: 10px;
+                            margin-top: 14px;
                         }
                     }
                 }
