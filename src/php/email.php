@@ -6,11 +6,11 @@
     $message = $_POST["message"];
 
     $to = "tudorgalatan@gmail.com";
-    $final_message = "Name: ".$name."Phone: ".$phone_number."Message: ".$message;
+    $final_message = "Name: ".$name." Phone: ".$phone_number." Message: ".$message;
 
     if ($name != "" && $email != "")
     {
         mail ($to, $subject, $final_message);
-        echo "Email Sent";
+        header ("Location: http://tudorgalatan.epizy.com/#contact_me");
     }
 ?>
