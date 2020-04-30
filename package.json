@@ -19,7 +19,7 @@
     "gulp-sass": "^4.0.2",
     "gulp-scss": "^1.4.0",
     "http": "^0.0.1-security",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "serve-static": "^1.14.1",
     "waypoints": "^4.0.1"
   },
